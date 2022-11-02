@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+   
+
+    <!--Optional (only if you need plaback control)-->
+    <link rel="stylesheet" href="control.playback.css">
+
+  
+  
+   
+    <title>Document</title>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+</head>
+<body>
+        <div class="boder-vehicle">
+            <h1>Hành trình</h1>
+           
+            <div class="vehicle" id="vehicle-user"></div>
+        </div>
+
+        <div class="modal-overlay modal-close"></div>
+        
+        <div class="boder-header">
+            
+       
+            <div class="map-header">
+                <div class="icon-title">
+                    <i class="fa fa-bezier-curve"></i>
+                    <a href="#">Tuyến đường</a>
+                </div>
+                <div class="icon-title">
+                    <i class="fas fa-tv"></i>
+                    <a href="#">Giám sát</a>
+                </div>
+
+            </div>
+            
+           
+            <div id="map">
+              
+                <!-- <div class="dropdown">
+                    <input class="text-box" type="text" placeholder="Select on" readonly>
+                    <div class="options">
+                      <div onclick="show('HTML')">HTML</div>
+                      <div onclick="show('CSS')">CSS</div>
+                    </div>
+                </div> -->
+                <div class="icon-close">
+                    <i class="fas fa-chevron-right" id="open"></i>
+                    <i class="fas fa-chevron-left" id="close"></i>
+                </div>
+              
+    
+            </div>
+        </div>
+  
+    <!-- <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script> -->
+    <!-- <script src="index.js" ></script> -->
+    <!-- <script src="leaflet.js" ></script> -->
+    <script src="https://linghuam.github.io/Leaflet.TrackPlayBack/examples/lib/leaflet/leaflet.js" ></script>
+    <script src="https://linghuam.github.io/Leaflet.TrackPlayBack/dist/control.trackplayback.js" ></script>
+    <script src="https://linghuam.github.io/Leaflet.TrackPlayBack/dist/leaflet.trackplayback.js"></script>
+    <script src="api.js" ></script>
+    <script src="apimap.js" ></script>
+    <script src="trackplayback.js"></script>
+    <!-- <script src="dawer.js" ></script> -->
+</body>
+</html>
